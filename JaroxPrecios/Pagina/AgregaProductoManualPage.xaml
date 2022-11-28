@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JaroxPrecios.Pagina.AgregaProductoManualPage"
+             Title="AgregaProductoManualPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Agrega Producto manual"
+            FontSize="Title"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label Text="Codigo interno" FontSize="Header"/>
+        <Entry
+            Placeholder="Código interno"/>
+
+        <Label Text="Descripción" FontSize="Header"/>
+        <Entry
+            Placeholder="Descripción"/>
+
+        <Label Text="Codigo de barras" FontSize="Header"/>
+        <Entry
+            Placeholder="Código de barras"/>
+
+          <Label Text="Codigo O" FontSize="Header"/>
+        <Entry
+            Placeholder="Código O"/>
+
+          <Label Text="Codigo C" FontSize="Header"/>
+        <Entry
+            Placeholder="Código C"/>
+
+          <Label Text="Codigo Ot" FontSize="Header"/>
+        <Entry
+            Placeholder="Código Ot"/>
+
+        <Label Text="Fecha" FontSize="Header"/>
+        <DatePicker
+            MinimumDate="01/01/2022"
+            MaximumDate="12/31/2022"
+            Date="06/21/2022" />
+
+        <Label Text="Precio bruto" FontSize="Header"/>
+        <Entry
+            Placeholder="Precio bruto"/>
+
+        <Label Text="Presentación" FontSize="Header"/>
+        <Picker x:Name="picker"
+        Title="Seleccionar una presentación">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Caja</x:String>
+                    <x:String>Unidad</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Label Text="Cantidad en la presentación" FontSize="Header"/>
+        <Entry
+            Placeholder="Cantidad"/>
+
+    </VerticalStackLayout>
+</ContentPage>
